@@ -1,0 +1,144 @@
+$white: #FFFFFF
+$graphite: #2F3132
+$borderColor: #494949
+$sectionColorTop: #E0E1E2
+$sectionColor: #EDEDED
+
+*,
+*::before,
+*::after
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    scroll-behavior: smooth
+
+body
+    font-family: 'Roboto', sans-serif
+    font-weight: 400
+    font-size: 20px
+    line-height: 23px
+
+svg
+    display: block
+
+a
+    text-decoration: none
+    color: inherit
+
+ul, ol
+    list-style-type: none
+
+img
+    display: block
+    max-width: 100%
+
+input
+    outline: none
+
+.nav__link, .top__arrow-link
+    transition: all .2s ease
+
+.center
+    padding-left: calc(50% - 580px)
+    padding-right: calc(50% - 580px)
+
+.nav
+    height: 100px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: $white
+    background-color: $graphite
+    .main__logo
+        display: block
+    .nav__menu
+        display: flex
+        .nav__list
+            padding-left: 21px
+            padding-right: 21px
+            &:not(:last-of-type)
+                border-right: 1px solid $borderColor
+        .nav__link
+            display: block
+            padding-top: 7px
+            padding-bottom: 7px
+            font-weight: 500
+            font-size: 12px
+            line-height: 14px
+            text-align: center
+            text-transform: uppercase
+            border-bottom: 1px solid transparent
+            &:hover
+                border-color: $white
+
+.title
+    font-weight: 900
+    font-size: 36px
+    line-height: 42px
+
+.title, .text
+    text-align: center
+
+.top
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 20px
+    padding-bottom: 75px
+    color: $graphite
+    background-color: $sectionColorTop
+    .top__img
+        position: relative
+        .title
+            position: absolute
+            top: 80px
+            left: 50%
+            transform: translateX(-50%)
+    .text
+        margin-top: 8px
+    .top__arrow-link
+        display: block
+        margin-top: 49px
+        &:hover
+            transform: scale(1.1)
+
+.without__wires
+    padding-top: 80px
+    padding-bottom: 69px
+    padding-left: calc(50% - 622px)
+    padding-right: calc(50% - 622px)
+    color: $graphite
+    background-color: $sectionColor
+    &-content
+        display: flex
+        flex-direction: column
+        align-items: center
+        position: relative
+        .title
+            margin: 35px 0
+        .text
+            max-width: 761px
+        .span__text
+            display: flex
+            align-items: flex-start
+            padding-top: 58px
+            padding-bottom: 118px
+            font-weight: 900
+            font-size: 300px
+            line-height: 262px
+            text-align: center
+            text-transform: uppercase
+            color: #C4C4C4
+            &-style
+                font-weight: 900
+                font-size: 96px
+                line-height: 112px
+        .mouse__img
+            display: flex
+            align-items: flex-start
+            gap: 44px
+            position: absolute
+            bottom: 0
+            transform: translateX(-41px)
