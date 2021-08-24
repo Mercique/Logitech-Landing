@@ -19,6 +19,7 @@ body
     font-weight: 400
     font-size: 20px
     line-height: 23px
+    color: $graphite
 
 svg
     display: block
@@ -87,7 +88,6 @@ input
     align-items: center
     padding-top: 20px
     padding-bottom: 75px
-    color: $graphite
     background-color: $sectionColorTop
     .top__img
         position: relative
@@ -109,7 +109,6 @@ input
     padding-bottom: 69px
     padding-left: calc(50% - 622px)
     padding-right: calc(50% - 622px)
-    color: $graphite
     background-color: $sectionColor
     &-content
         display: flex
@@ -142,3 +141,154 @@ input
             position: absolute
             bottom: 0
             transform: translateX(-41px)
+
+.anywhere
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 100px
+    padding-bottom: 100px
+    padding-left: calc( 50% - 640px )
+    padding-right: calc( 50% - 640px )
+    &__up
+        max-width: 765px
+        display: flex
+        flex-direction: column
+        align-items: center
+        .text
+            margin-top: 35px
+    &__box
+        display: flex
+        gap: 32px
+        margin-top: 50px
+        margin-bottom: 50px
+        .box
+            width: 236px
+            height: 140px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            border: 1px solid $graphite
+        .text-span
+            text-align: center
+    &__bottom
+        max-width: 765px
+        margin-top: 39px
+        display: flex
+        flex-direction: column
+        align-items: center
+        .title
+            font-size: 20px
+            line-height: 23px
+            margin-bottom: 13px
+        .form__radio
+            display: flex
+            gap: 25px
+            align-items: center
+            .label__radio
+                cursor: pointer
+            .input__radio
+                display: none
+            .tap__img
+                border-radius: 50%
+        .text
+            margin-top: 32px
+
+.device
+    height: 1332px
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    background-color: $sectionColor
+    &__content
+        max-width: 958px
+        position: absolute
+        top: 100px
+        .text
+            margin-top: 35px
+            margin-bottom: 64px
+    .device__menu
+        display: flex
+        justify-content: space-between
+        .device__list
+            max-width: 310px
+            display: flex
+            align-items: center
+            &:last-of-type
+                max-width: 145px
+    &__bg
+        margin-top: auto
+
+.settings
+    padding-top: 93px
+    padding-left: calc( 50% - 585px )
+    padding-right: calc( 50% - 585px )
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: $sectionColor
+    &__heading
+        width: 866px
+        .text
+            margin-top: 30px
+            margin-bottom: 52px
+    .popular__app
+        max-width: 749px
+        height: 196px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding: 0 20px
+        transform: translateY(-71px)
+        color: $white
+        background-color: #C4C4C4
+        .app__icons
+            display: flex
+            gap: 35px
+        .text
+            margin-top: 25px
+
+.comfort-and-fast
+    padding-left: calc( 50% - 655px )
+    padding-right: calc( 50% - 655px )
+    padding-top: 100px
+    padding-bottom: 100px
+    &__box
+        display: flex
+        gap: 37px
+        .img
+            max-width: none
+        .comfort-and-fast__heading
+            width: 50%
+            display: flex
+            flex-direction: column
+            justify-content: center
+        .title
+            margin-bottom: 34px
+            text-align: left
+        .text
+            max-width: 400px
+            text-align: left
+        .right
+            display: flex
+            align-items: flex-end
+            .text
+                max-width: 354px
+            .title, .text
+                text-align: right
+
+.footer
+    height: 150px
+    display: flex
+    justify-content: center
+    padding-top: 47px
+    color: #C7C8C8
+    background-color: $graphite
+    .copyright
+        font-weight: normal
+        font-size: 14px
+        line-height: 16px
+        text-align: center
