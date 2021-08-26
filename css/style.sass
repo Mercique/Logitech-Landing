@@ -3,6 +3,8 @@ $graphite: #2F3132
 $borderColor: #494949
 $sectionColorTop: #E0E1E2
 $sectionColor: #EDEDED
+$greyLight: #C4C4C4
+$footerColor: #C7C8C8
 
 *,
 *::before,
@@ -129,7 +131,7 @@ input
             line-height: 262px
             text-align: center
             text-transform: uppercase
-            color: #C4C4C4
+            color: $greyLight
             &-style
                 font-weight: 900
                 font-size: 96px
@@ -244,7 +246,7 @@ input
         padding: 0 20px
         transform: translateY(-71px)
         color: $white
-        background-color: #C4C4C4
+        background-color: $greyLight
         .app__icons
             display: flex
             gap: 35px
@@ -285,7 +287,7 @@ input
     display: flex
     justify-content: center
     padding-top: 47px
-    color: #C7C8C8
+    color: $footerColor
     background-color: $graphite
     .copyright
         font-weight: normal
