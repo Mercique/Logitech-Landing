@@ -389,7 +389,7 @@ input {
 }
 
 .settings {
-  padding-top: 93px;
+  padding-top: 100px;
   padding-left: calc( 50% - 585px);
   padding-right: calc( 50% - 585px);
   display: -webkit-box;
@@ -459,14 +459,13 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 37px;
 }
 
-.comfort-and-fast__box .img {
-  max-width: none;
+.comfort-and-fast__img {
+  width: 50%;
 }
 
-.comfort-and-fast__box .comfort-and-fast__heading {
+.comfort-and-fast__heading {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -478,32 +477,42 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 37px;
 }
 
-.comfort-and-fast__box .title {
-  margin-bottom: 34px;
+.comfort-and-fast__heading .title {
+  width: 281px;
+  margin-bottom: 28px;
+}
+
+.comfort-and-fast__heading .title, .comfort-and-fast__heading .text {
   text-align: left;
 }
 
-.comfort-and-fast__box .text {
-  max-width: 400px;
-  text-align: left;
+.comfort-and-fast .text {
+  width: 400px;
 }
 
-.comfort-and-fast__box .right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.comfort-and-fast .comfort__right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.comfort-and-fast .comfort__right .comfort-and-fast__heading {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  padding-right: 31px;
 }
 
-.comfort-and-fast__box .right .text {
-  max-width: 354px;
+.comfort-and-fast .comfort__right .title {
+  width: 317px;
+  margin-bottom: 34px;
 }
 
-.comfort-and-fast__box .right .title, .comfort-and-fast__box .right .text {
+.comfort-and-fast .comfort__right .title, .comfort-and-fast .comfort__right .text {
   text-align: right;
 }
 
@@ -525,5 +534,29 @@ input {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+}
+
+@media (max-width: 1280px) {
+  .top {
+    padding-top: 0;
+    padding-bottom: 56px;
+  }
+  .without__wires {
+    padding-top: 45px;
+    padding-bottom: 48px;
+  }
+  .anywhere {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .device {
+    height: 1088px;
+  }
+  .settings {
+    padding-top: 70px;
+  }
+  .comfort-and-fast {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -224,7 +224,7 @@ input
         margin-top: auto
 
 .settings
-    padding-top: 93px
+    padding-top: 100px
     padding-left: calc( 50% - 585px )
     padding-right: calc( 50% - 585px )
     display: flex
@@ -260,27 +260,32 @@ input
     padding-bottom: 100px
     &__box
         display: flex
-        gap: 37px
-        .img
-            max-width: none
-        .comfort-and-fast__heading
-            width: 50%
-            display: flex
-            flex-direction: column
-            justify-content: center
+    &__img
+        width: 50%
+    &__heading
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding-left: 37px
         .title
-            margin-bottom: 34px
+            width: 281px
+            margin-bottom: 28px
+        .title, .text
             text-align: left
-        .text
-            max-width: 400px
-            text-align: left
-        .right
-            display: flex
+    .text
+        width: 400px
+    .comfort__right
+        flex-direction: row-reverse
+        .comfort-and-fast__heading
             align-items: flex-end
-            .text
-                max-width: 354px
-            .title, .text
-                text-align: right
+            padding-right: 31px
+        .title
+            width: 317px
+            margin-bottom: 34px
+        .title, .text
+            text-align: right
+
 
 .footer
     height: 150px
@@ -294,3 +299,25 @@ input
         font-size: 14px
         line-height: 16px
         text-align: center
+
+@media (max-width: 1280px)
+    .top
+        padding-top: 0
+        padding-bottom: 56px
+
+    .without__wires
+        padding-top: 45px
+        padding-bottom: 48px
+
+    .anywhere
+        padding-top: 70px
+        padding-bottom: 70px
+
+    .device
+        height: 1088px
+
+    .settings
+        padding-top: 70px
+
+    .comfort-and-fast
+        padding: 0
