@@ -40,12 +40,20 @@ img
 input
     outline: none
 
-.nav__link, .top__arrow-link
+.nav__link, .top__arrow-link, .label__switcher
     transition: all .2s ease
 
 .center
     padding-left: calc(50% - 580px)
     padding-right: calc(50% - 580px)
+
+.title
+    font-weight: 900
+    font-size: 36px
+    line-height: 42px
+
+.title, .text
+    text-align: center
 
 .nav
     height: 100px
@@ -54,8 +62,11 @@ input
     justify-content: space-between
     color: $white
     background-color: $graphite
-    .main__logo
-        display: block
+    .transparent__box, .media__logo, .nav__menu-box
+        display: none
+    .transparent__box
+        width: 82px
+        height: 73px
     .nav__menu
         display: flex
         .nav__list
@@ -76,14 +87,6 @@ input
             &:hover
                 border-color: $white
 
-.title
-    font-weight: 900
-    font-size: 36px
-    line-height: 42px
-
-.title, .text
-    text-align: center
-
 .top
     display: flex
     flex-direction: column
@@ -94,6 +97,7 @@ input
     .top__img
         position: relative
         .title
+            width: 100%
             position: absolute
             top: 80px
             left: 50%
@@ -231,6 +235,8 @@ input
     flex-direction: column
     align-items: center
     background-color: $sectionColor
+    .media__options, .settings__switch
+        display: none
     &__heading
         width: 866px
         .text
@@ -286,7 +292,6 @@ input
         .title, .text
             text-align: right
 
-
 .footer
     height: 150px
     display: flex
@@ -321,3 +326,114 @@ input
 
     .comfort-and-fast
         padding: 0
+
+@media (max-width: 1024px)
+    .nav
+        padding-left: 20px
+        padding-right: 20px
+
+@media (max-width: 894px)
+    .nav
+        height: auto
+        padding: 54px 58px 160px
+        justify-content: space-between
+        background-color: $sectionColorTop
+        .logo, .nav__menu
+            display: none
+        .media__logo, .nav__menu-box, .transparent__box
+            display: block
+        .nav__menu-box
+            align-self: flex-start
+    
+    .top
+        .top__img
+            .title
+                top: 0
+        .text
+            margin-top: 120px
+
+    .without__wires
+        padding: 80px 19px 0 39px
+        .without__wires-content
+            .text
+                max-width: 655px
+            .span__text, .span__text-style
+                font-size: 150px
+                line-height: 176px
+                padding-bottom: 0
+            .mouse__img
+                position: static
+                display: flex
+                gap: 0
+                transform: translateX(0)
+            .mouse__img-left
+                display: none
+            .mouse__img-left
+                img
+                    width: 836px
+    
+    .anywhere__up 
+        .text
+            max-width: 590px
+
+    .device
+        .device__content
+            max-width: 765px
+        .device__menu
+            .device__list
+                max-width: 274px
+
+    .settings
+        padding: 70px 64px 80px
+        .settings__heading, .popular__app
+            width: 100%
+        .options
+            display: none
+        .media__options, .settings__switch
+            display: block
+        .popular__app
+            max-width: none
+            transform: translateY(0)
+        .settings__switch
+            margin-top: 53px
+            margin-bottom: 70px
+            display: flex
+            gap: 25px
+            .settings__input
+                display: none
+                &:checked + .label__switcher
+                    background-color: $graphite
+            .label__switcher
+                width: 25px
+                height: 25px
+                border-radius: 50%
+                background-color: $greyLight
+
+    .comfort-and-fast
+        .comfort-and-fast__box
+            flex-direction: column-reverse
+            .comfort-and-fast__img
+                width: 100%
+                .comfort__img
+                    width: 100%
+            .comfort-and-fast__heading
+                width: 100%
+                align-items: center
+                padding: 70px 65px 50px
+                .title, .text
+                    width: 100%
+                    text-align: center
+
+@media (max-width: 667px)
+    .device
+        .device__content
+            display: flex
+            flex-direction: column
+            align-items: center
+        .device__menu
+            width: 225px
+            flex-direction: column
+            svg
+                display: none
+            .device__list:not(:last-child)
+                margin-bottom: 16px
