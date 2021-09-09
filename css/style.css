@@ -41,7 +41,8 @@ input {
   outline: none;
 }
 
-.nav__link, .top__arrow-link, .label__switcher, .nav__drop, .drop__link {
+.nav__link, .top__arrow-link, .label__switcher, .nav__drop, .drop__link,
+.scroll__up, .scroll__arrow {
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
@@ -61,12 +62,9 @@ input {
   text-align: center;
 }
 
-.wrap {
-  position: relative;
-  overflow: hidden;
-}
-
-.scroll__top {
+.scroll__up {
+  width: 50px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,15 +74,29 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80px;
-  height: 80px;
   position: fixed;
-  right: 50px;
-  bottom: 50px;
+  right: 20px;
+  bottom: 20px;
   z-index: 1;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
   border-radius: 50%;
+  background-color: #2F3132;
+}
+
+.scroll__up .scroll__arrow path {
+  fill: #C4C4C4;
+}
+
+.scroll__up:hover {
+  background-color: #C4C4C4;
+}
+
+.scroll__up:hover .scroll__arrow path {
+  fill: #2F3132;
+}
+
+.wrap {
+  position: relative;
+  overflow: hidden;
 }
 
 .nav {
@@ -840,6 +852,14 @@ input {
   .text {
     font-size: 14px;
     line-height: 16px;
+  }
+  .scroll__up {
+    width: 40px;
+    height: 40px;
+  }
+  .scroll__up .scroll__arrow {
+    width: 25px;
+    height: 13px;
   }
   .nav {
     padding: 25px 29px 94px;
