@@ -19,6 +19,10 @@ body {
   color: #2F3132;
 }
 
+html, body {
+  height: 100%;
+}
+
 svg {
   display: block;
 }
@@ -94,7 +98,21 @@ input {
   fill: #2F3132;
 }
 
-.wrap {
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper__top {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   position: relative;
   overflow: hidden;
 }
@@ -814,6 +832,7 @@ input {
     background-color: #2F3132;
   }
   .settings .settings__switch .label__switcher {
+    display: block;
     width: 25px;
     height: 25px;
     border-radius: 50%;

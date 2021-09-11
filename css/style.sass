@@ -23,6 +23,9 @@ body
     line-height: 23px
     color: $graphite
 
+html, body
+    height: 100%
+
 svg
     display: block
 
@@ -77,9 +80,14 @@ input
             path
                 fill: $graphite
 
-.wrap
-    position: relative
-    overflow: hidden
+.wrapper
+    min-height: 100%
+    display: flex
+    flex-direction: column
+    &__top
+        flex-grow: 1
+        position: relative
+        overflow: hidden
 
 .nav
     height: 100px
@@ -492,6 +500,7 @@ input
                 &:checked + .label__switcher
                     background-color: $graphite
             .label__switcher
+                display: block
                 width: 25px
                 height: 25px
                 border-radius: 50%
