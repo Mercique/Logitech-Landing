@@ -556,7 +556,7 @@ input {
   background-color: #EDEDED;
 }
 
-.settings .media__options, .settings .settings__switch {
+.settings .media__options, .settings #settings__switch {
   display: none;
 }
 
@@ -809,15 +809,19 @@ input {
   .settings .options {
     display: none;
   }
-  .settings .media__options, .settings .settings__switch {
+  .settings .media__options, .settings #settings__switch {
     display: block;
+  }
+  .settings .media__options {
+    width: calc(330px + (497 - 330) * ((100vw - 375px) / (894 - 375)));
+    height: calc(424px + (687 - 424) * ((100vw - 375px) / (894 - 375)));
   }
   .settings .popular__app {
     max-width: none;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-  .settings .settings__switch {
+  .settings #settings__switch {
     margin-top: 53px;
     margin-bottom: 70px;
     display: -webkit-box;
@@ -825,13 +829,13 @@ input {
     display: flex;
     gap: 25px;
   }
-  .settings .settings__switch .settings__input {
+  .settings #settings__switch .settings__input {
     display: none;
   }
-  .settings .settings__switch .settings__input:checked + .label__switcher {
+  .settings #settings__switch .settings__input:checked + .label__switcher {
     background-color: #2F3132;
   }
-  .settings .settings__switch .label__switcher {
+  .settings #settings__switch .label__switcher {
     display: block;
     width: 25px;
     height: 25px;
@@ -1016,10 +1020,10 @@ input {
   .settings .settings__img {
     padding: 0 23px;
   }
-  .settings .settings__switch {
+  .settings #settings__switch {
     gap: 15px;
   }
-  .settings .settings__switch .label__switcher {
+  .settings #settings__switch .label__switcher {
     width: 15px;
     height: 15px;
   }

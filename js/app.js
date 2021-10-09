@@ -6,3 +6,9 @@ for (var i = 0; i < dropLink.length; i++) {
         dropInput.checked = false;
     }
 }
+
+var settingsImg = document.querySelector('.media__options');
+
+function imgSwitch(num) {
+    settingsImg.src = 'img/mouse-settings' + num + '.png';
+}

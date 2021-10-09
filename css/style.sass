@@ -317,7 +317,7 @@ input
     flex-direction: column
     align-items: center
     background-color: $sectionColor
-    .media__options, .settings__switch
+    .media__options, #settings__switch
         display: none
     &__heading
         width: 866px
@@ -485,12 +485,15 @@ input
             width: 100%
         .options
             display: none
-        .media__options, .settings__switch
+        .media__options, #settings__switch
             display: block
+        .media__options
+            width: calc(330px + (497 - 330) * ((100vw - 375px) / (894 - 375)))
+            height: calc(424px + (687 - 424) * ((100vw - 375px) / (894 - 375)))
         .popular__app
             max-width: none
             transform: translateY(0)
-        .settings__switch
+        #settings__switch
             margin-top: 53px
             margin-bottom: 70px
             display: flex
@@ -644,7 +647,7 @@ input
             padding: 0 34px
         .settings__img
             padding: 0 23px
-        .settings__switch
+        #settings__switch
             gap: 15px
             .label__switcher
                 width: 15px
