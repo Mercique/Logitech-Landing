@@ -242,9 +242,6 @@ input
         align-items: center
         .text
             margin-top: 35px
-    &__img
-        .tablet-wood
-            display: none
     &__box
         display: flex
         gap: 32px
@@ -260,6 +257,8 @@ input
             border: 1px solid $graphite
         .text-span
             text-align: center
+    .slider__picture-mob
+        display: none
     &__bottom
         max-width: 765px
         margin-top: 39px
@@ -270,18 +269,29 @@ input
             font-size: 20px
             line-height: 23px
             margin-bottom: 13px
-        .form__radio
-            display: flex
-            gap: 25px
-            align-items: center
-            .label__radio
-                cursor: pointer
-            .input__radio
-                display: none
-            .tap__img
-                border-radius: 50%
         .text
             margin-top: 32px
+    &__slider
+        display: flex
+        gap: 23px
+        .slider__btns
+            display: flex
+            gap: 20px
+        .arrow-btn
+            padding-left: 10px
+            padding-right: 10px
+            cursor: pointer
+            border: none
+            background: transparent
+        .btn
+            cursor: pointer
+            border-radius: 50%
+            border: 2px solid transparent
+            img
+                border-radius: 50%
+        .checked
+            opacity: .5
+            border-color: #000
 
 .device
     height: 1332px
@@ -466,11 +476,10 @@ input
         .anywhere__up 
             .text
                 max-width: 590px
-        .anywhere__img
-            .full-wood
-                display: none
-            .tablet-wood
-                display: block
+        .slider__picture-big
+            display: none
+        .slider__picture-mob
+            display: block
 
     .device
         .device__content
@@ -608,16 +617,6 @@ input
                 .text-span
                     font-size: 14px
                     line-height: 16px
-        .anywhere__bottom
-            .form__radio
-                gap: 18px
-            .label__radio
-                svg
-                    width: 9px
-                    height: 18px
-                .tap__img
-                    width: 34px
-                    height: 34px
 
     .device
         height: 718px

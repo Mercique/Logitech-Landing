@@ -402,10 +402,6 @@ input {
   margin-top: 35px;
 }
 
-.anywhere__img .tablet-wood {
-  display: none;
-}
-
 .anywhere__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,6 +434,10 @@ input {
   text-align: center;
 }
 
+.anywhere .slider__picture-mob {
+  display: none;
+}
+
 .anywhere__bottom {
   max-width: 765px;
   margin-top: 39px;
@@ -459,30 +459,45 @@ input {
   margin-bottom: 13px;
 }
 
-.anywhere__bottom .form__radio {
+.anywhere__bottom .text {
+  margin-top: 32px;
+}
+
+.anywhere__slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 25px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  gap: 23px;
 }
 
-.anywhere__bottom .form__radio .label__radio {
+.anywhere__slider .slider__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.anywhere__slider .arrow-btn {
+  padding-left: 10px;
+  padding-right: 10px;
   cursor: pointer;
+  border: none;
+  background: transparent;
 }
 
-.anywhere__bottom .form__radio .input__radio {
-  display: none;
+.anywhere__slider .btn {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid transparent;
 }
 
-.anywhere__bottom .form__radio .tap__img {
+.anywhere__slider .btn img {
   border-radius: 50%;
 }
 
-.anywhere__bottom .text {
-  margin-top: 32px;
+.anywhere__slider .checked {
+  opacity: .5;
+  border-color: #000;
 }
 
 .device {
@@ -788,10 +803,10 @@ input {
   .anywhere .anywhere__up .text {
     max-width: 590px;
   }
-  .anywhere .anywhere__img .full-wood {
+  .anywhere .slider__picture-big {
     display: none;
   }
-  .anywhere .anywhere__img .tablet-wood {
+  .anywhere .slider__picture-mob {
     display: block;
   }
   .device .device__content {
@@ -964,17 +979,6 @@ input {
   .anywhere .anywhere__up .anywhere__box .text-span {
     font-size: 14px;
     line-height: 16px;
-  }
-  .anywhere .anywhere__bottom .form__radio {
-    gap: 18px;
-  }
-  .anywhere .anywhere__bottom .label__radio svg {
-    width: 9px;
-    height: 18px;
-  }
-  .anywhere .anywhere__bottom .label__radio .tap__img {
-    width: 34px;
-    height: 34px;
   }
   .device {
     height: 718px;
